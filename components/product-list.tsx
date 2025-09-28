@@ -26,7 +26,7 @@ export const ProductList = ({products}: Props) => {
                 />
             </div>
             <ul className='mt-6 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4'>
-                {products.map((product, key) => {
+                {filteredProduct.map((product, key) => {
                     return (
                         <li key={key}>
                             <ProductCard product={product} />
